@@ -1,0 +1,65 @@
+#!/usr/bin/env sh
+
+HARMONICS=$2
+AMPLITUDES="Amplitudes: "
+
+if ! [[ "$HARMONICS" =~ ^[0-9]+$ ]] ; then
+   HARMONICS=5
+fi
+
+case $1 in
+
+saw)
+
+for ((h=1; h <= $HARMONICS; h++))
+do
+    partial=$(echo "$h"|awk '{printf "%f", 1 / $1}')
+    AMPLITUDES+="$partial "
+done
+
+;;
+
+square)
+
+for ((h=1; h <= $HARMONICS; h++))
+do
+modval=$(expr $h % 2)
+if [ $modval == 1 ] ; then
+    partial=$(echo "$h"|awk '{printf "%f", 1 / $1}')
+    AMPLITUDES+="$partial "
+else
+    AMPLITUDES+="0 "
+fi
+done
+
+;;
+
+triangle)
+
+negate=false
+for ((h=1; h <= $HARMONICS; h++))
+do
+modval=$(expr $h % 2)
+if [ $modval == 1 ] ; then
+    numerator="1"
+    if $negate ; then numerator="-$numerator" ; fi
+    partial=$(echo "$numerator $h"|awk '{printf "%f", $1 / ($2 * $2)}')
+    AMPLITUDES+="$partial "
+
+    if $negate ; then negate=false ; else negate=true ; fi
+else
+    AMPLITUDES+="0 "
+fi
+
+done
+
+;;
+
+*)
+echo "Usage: sinesum (square|triangle|saw) [number_of_harmonics (defaults to 5)]"
+exit 0;
+;;
+
+esac
+
+echo "$AMPLITUDES"

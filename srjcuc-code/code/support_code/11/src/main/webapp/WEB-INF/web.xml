@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ ! Excerpted from "The Cucumber for Java Book",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/srjcuc for more book information.
+-->
+<web-app
+   xmlns="http://java.sun.com/xml/ns/javaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+   http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+   metadata-complete="false"
+   version="3.0">
+ 
+  <servlet>
+    <servlet-name>ATM</servlet-name>
+    <servlet-class>nicebank.AtmServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ATM</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+ 
+</web-app>

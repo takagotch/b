@@ -1,0 +1,24 @@
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RunCukesTest
+Feature: Cash Withdrawal
+Listening on http://192.168.1.11:8887/
+Server shutdown
+
+  Scenario: Successful withdrawal from an account in credit
+    Given my account has been credited with $100.00
+    When I withdraw $20
+    Then $20 should be dispensed
+    And the balance of my account should be $80.00
+      java.lang.AssertionError: Incorrect account balance
+                                          - expected:<$80.00> but was:<$100.00>
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.failNotEquals(Assert.java:743)
+      	at org.junit.Assert.assertEquals(Assert.java:118)
+      	at nicebank.AccountSteps.theBalanceOfMyAccountShouldBe$
+                                                         (AccountSteps.java:32)
+      	at ✽.And the balance of my account should be $80.00
+
+1 Scenarios (1 failed)
+4 Steps (1 failed, 3 passed)

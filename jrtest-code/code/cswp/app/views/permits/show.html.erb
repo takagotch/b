@@ -1,0 +1,15 @@
+<% provide(:title, "Show Permit") %>
+
+<div class="row">
+  <div class="col-md-4">
+
+    <p>
+      <strong>Location:</strong>
+      <%= @permit.location %>
+    </p>
+
+    <%= link_to 'Edit', edit_permit_path(@permit) %> |
+    <%= link_to 'Back', permits_path %>
+  </div>
+</div>
+

@@ -1,0 +1,8 @@
+Given my account has been credited with $100.00        
+  java.lang.NullPointerException
+  	at nicebank.Account.getNumber(Account.java:23)
+  	at nicebank.Account.credit(Account.java:11)
+  	at nicebank.AccountSteps.myAccountHasBeenCreditedWith$
+  	                                                     (AccountSteps.java:23)
+  	at ✽.Given my account has been credited with $100.00
+  	                                                (cash_withdrawal.feature:3)

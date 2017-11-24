@@ -1,0 +1,15 @@
+#N canvas 546 164 366 255 10;
+#X obj 4 3 loadbang;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array sine 1027 float 2;
+#X coords 0 1 1027 -1 200 140 1 0 0;
+#X restore 100 98 graph;
+#X obj 4 199 output~;
+#X floatatom 4 95 5 0 0 0 - - -;
+#X msg 4 31 440 \; sine sinesum 1024 1 \; sine normalize 1 \;;
+#X obj 4 132 tabosc4~ sine;
+#X connect 0 0 4 0;
+#X connect 3 0 5 0;
+#X connect 4 0 3 0;
+#X connect 5 0 2 0;
+#X connect 5 0 2 1;

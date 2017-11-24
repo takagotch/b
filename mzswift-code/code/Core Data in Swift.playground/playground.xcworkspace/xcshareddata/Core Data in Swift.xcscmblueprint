@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "82263e25-b5eb-0310-b4ec-9460fbaf34b7++6564",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "82263e25-b5eb-0310-b4ec-9460fbaf34b7++6564" : {
+
+    },
+    "82263e25-b5eb-0310-b4ec-9460fbaf34b7++5750" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "82263e25-b5eb-0310-b4ec-9460fbaf34b7++6564" : 9223372036854775807,
+    "82263e25-b5eb-0310-b4ec-9460fbaf34b7++5750" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3FABAEDA-F808-480F-93D8-E6245A57A736",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "82263e25-b5eb-0310-b4ec-9460fbaf34b7++6564" : "mzswift\/",
+    "82263e25-b5eb-0310-b4ec-9460fbaf34b7++5750" : "CD%20Swift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Core Data in Swift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Book\/code\/Core Data in Swift.playground",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/svn.pragprog.com\/Bookshelf",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "82263e25-b5eb-0310-b4ec-9460fbaf34b7++5750"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/svn.pragprog.com\/Bookshelf",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "82263e25-b5eb-0310-b4ec-9460fbaf34b7++6564"
+    }
+  ]
+}

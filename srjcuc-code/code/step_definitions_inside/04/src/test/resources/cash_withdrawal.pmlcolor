@@ -1,0 +1,19 @@
+  Scenario: Successful withdrawal from an account in credit
+    Given I have deposited $100 in my account
+      java.lang.AssertionError: Incorrect account balance
+                                              - expected:<100> but was:<0>
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.failNotEquals(Assert.java:743)
+      	at org.junit.Assert.assertEquals(Assert.java:118)
+      	at org.junit.Assert.assertEquals(Assert.java:555)
+      	at nicebank.Steps.iHaveDeposited$InMyAccount(Steps.java:29)
+      	at ✽.Given I have deposited $100 in my account(cash_withdrawal.feature:3)
+    When I request $20
+    Then $20 should be dispensed
+
+1 Scenarios (1 failed)
+3 Steps (1 failed, 2 skipped)
+0m0.076s
+
+java.lang.AssertionError: Incorrect account balance 
+                                        - expected:<100> but was:<0>

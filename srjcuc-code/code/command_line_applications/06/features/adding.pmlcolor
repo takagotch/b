@@ -1,0 +1,25 @@
+@announce
+Feature: Adding
+
+  Scenario: Add two numbers       # features/adding.feature:4
+    Given the input "2+2"         # features/step_definitions/calculator_steps.rb:2
+    When the calculator is run    # features/step_definitions/calculator_steps.rb:13
+      $ cd ~/command_line_applications/06/tmp/aruba
+      $ /usr/bin/ruby calculator.rb input.txt
+      
+      /usr/bin/ruby: No such file or directory -- calculator.rb (LoadError)
+    Then the output should be "4" # features/step_definitions/calculator_steps.rb:19
+      Exit status was 1 but expected it to be 0. Output:
+      
+      /usr/bin/ruby: No such file or 
+      directory -- calculator.rb (LoadError)
+      
+       (RSpec::Expectations::ExpectationNotMetError)
+      features/adding.feature:7
+
+Failing Scenarios:
+cucumber features/adding.feature:4 # Scenario: Add two numbers
+
+1 scenario (1 failed)
+3 steps (1 failed, 2 passed)
+0m0.138s

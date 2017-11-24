@@ -1,0 +1,9 @@
+java.lang.AssertionError: Incorrect amount dispensed
+                                     - expected:<20> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at nicebank.Steps.$ShouldBeDispensed(Steps.java:95)
+	at ✽.Then $20 should be dispensed(cash_withdrawal.feature:5)
+

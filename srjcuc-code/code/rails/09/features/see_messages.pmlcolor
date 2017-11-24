@@ -1,0 +1,25 @@
+Feature: See Messages
+
+  Scenario: See another user's messages
+    Given there is a User
+    And the User has posted the message "this is my message"
+    When I visit the page for the User
+      undefined method `user_path' for 
+      #<Cucumber::Rails::World:0x63756b65> (NoMethodError)
+      ./features/step_definitions/user_steps.rb:15
+      features/see_messages.feature:5
+    Then I should see "this is my message"
+      Undefined step: "I should see "this is my message"" (Cucumber::Undefined)
+      features/see_messages.feature:6
+
+Failing Scenarios:
+cucumber features/see_messages.feature:2
+
+1 scenario (1 failed)
+4 steps (1 failed, 1 undefined, 2 passed)
+0m0.348s
+
+You can implement step definitions for undefined steps with these snippets:
+Then /^I should see "(.*?)"$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
+end

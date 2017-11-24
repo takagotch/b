@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11761" systemVersion="16C48b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="11">
+            <objects>
+                <navigationController id="3" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="4">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="12" kind="relationship" relationship="rootViewController" id="19"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="64"/>
+        </scene>
+        <!--Servings-->
+        <scene sceneID="dgX-H0-XYF">
+            <objects>
+                <viewController id="Sv9-45-LDx" customClass="PPRTextEditViewController" customModule="PPRecipes" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b1m-hd-8bk"/>
+                        <viewControllerLayoutGuide type="bottom" id="gzs-Qw-gYH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dde-jh-djx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OsC-BL-nV9">
+                                <rect key="frame" x="16" y="129" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enter The Number Of Servings:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zrM-zi-FBY">
+                                <rect key="frame" x="68" y="84" width="239" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="OsC-BL-nV9" secondAttribute="leading" id="IMO-AZ-Zu8"/>
+                            <constraint firstItem="OsC-BL-nV9" firstAttribute="top" secondItem="zrM-zi-FBY" secondAttribute="bottom" constant="24" id="IhT-yU-ad2"/>
+                            <constraint firstItem="zrM-zi-FBY" firstAttribute="centerX" secondItem="dde-jh-djx" secondAttribute="centerX" id="Phd-xY-Fqx"/>
+                            <constraint firstItem="zrM-zi-FBY" firstAttribute="top" secondItem="b1m-hd-8bk" secondAttribute="bottom" constant="20" id="V8x-FR-5Rf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OsC-BL-nV9" secondAttribute="trailing" id="cdL-3f-ygc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Servings" id="54g-fQ-nbt">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="lKp-sB-heI">
+                            <connections>
+                                <action selector="cancel:" destination="Sv9-45-LDx" id="5Sh-9u-Mhc"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="icN-S9-VJo">
+                            <connections>
+                                <action selector="done:" destination="Sv9-45-LDx" id="hdp-At-gd1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="OsC-BL-nV9" id="SD5-lq-Qru"/>
+                        <outlet property="view" destination="dde-jh-djx" id="10G-cG-rif"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g3G-4W-5d3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1615" y="-1022"/>
+        </scene>
+        <!--Ingredient Type-->
+        <scene sceneID="SoP-20-XZD">
+            <objects>
+                <viewController id="FR6-mc-htm" customClass="PPRTextEditViewController" customModule="PPRecipes" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UpL-h4-mu6"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ZI-P6-2mj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gi9-rV-X3R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enter Ingredient Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7j-mh-Jin">
+                                <rect key="frame" x="87.5" y="84" width="200" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B8v-Zw-tCW">
+                                <rect key="frame" x="16" y="135" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="FR6-mc-htm" id="UvX-AB-fVr"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="B8v-Zw-tCW" firstAttribute="top" secondItem="b7j-mh-Jin" secondAttribute="bottom" constant="25" id="9PC-bt-CGX"/>
+                            <constraint firstItem="b7j-mh-Jin" firstAttribute="centerX" secondItem="gi9-rV-X3R" secondAttribute="centerX" id="eRq-Nw-QaE"/>
+                            <constraint firstItem="b7j-mh-Jin" firstAttribute="top" secondItem="UpL-h4-mu6" secondAttribute="bottom" constant="20" id="gHH-r0-K1v"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B8v-Zw-tCW" secondAttribute="trailing" id="sdb-fH-VnN"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="B8v-Zw-tCW" secondAttribute="leading" id="vy6-0V-el8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ingredient Type" id="Bc1-ra-TA5">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Pia-ER-c77">
+                            <connections>
+                                <action selector="cancel:" destination="FR6-mc-htm" id="bc5-LS-c7o"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="hH5-yO-Q76">
+                            <connections>
+                                <action selector="done:" destination="FR6-mc-htm" id="I2o-bD-gHf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="B8v-Zw-tCW" id="4MZ-V4-slS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E5H-Jw-9Ei" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2606" y="-440"/>
+        </scene>
+        <!--Add Ingredient-->
+        <scene sceneID="T8S-jZ-vw9">
+            <objects>
+                <tableViewController id="0wB-uE-Z6z" customClass="PPRAddRecipeIngredientViewController" customModule="PPRecipes" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="iIu-Bt-GUV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection id="N3K-Wu-VzX">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="kCellIdentifier" textLabel="Zyb-3v-8vx" detailTextLabel="VAe-le-kEE" style="IBUITableViewCellStyleValue2" id="GYL-xw-XHX">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GYL-xw-XHX" id="lSp-bs-NuI">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Quantity" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zyb-3v-8vx">
+                                                    <rect key="frame" x="15" y="16" width="91" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                    <color key="textColor" red="0.32156862745098042" green="0.40000000000000002" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="12" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VAe-le-kEE">
+                                                    <rect key="frame" x="112" y="13" width="17" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="mIg-BN-ggp" kind="push" identifier="setQuantity" id="nsk-yy-bs8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="kCellIdentifier" textLabel="7ci-k0-lyw" detailTextLabel="Gjd-mg-JBd" style="IBUITableViewCellStyleValue2" id="thc-6M-P5a">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="thc-6M-P5a" id="j5B-pj-wam">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Type" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7ci-k0-lyw">
+                                                    <rect key="frame" x="15" y="16" width="91" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                    <color key="textColor" red="0.32156862749999998" green="0.40000000000000002" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Beef" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gjd-mg-JBd">
+                                                    <rect key="frame" x="112" y="13" width="34" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="FR6-mc-htm" kind="push" identifier="setType" id="zGd-fh-tOr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="kCellIdentifier" textLabel="Caa-6r-syR" detailTextLabel="5Q5-lk-ZT2" style="IBUITableViewCellStyleValue2" id="Vkw-qM-N2b">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vkw-qM-N2b" id="XBa-oV-q5B">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Units" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Caa-6r-syR">
+                                                    <rect key="frame" x="15" y="16" width="91" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                    <color key="textColor" red="0.32156862749999998" green="0.40000000000000002" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Pound(s)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Q5-lk-ZT2">
+                                                    <rect key="frame" x="112" y="13" width="66.5" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="1gQ-lK-kQS" kind="push" identifier="setUnits" id="1rl-YO-1cQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="0wB-uE-Z6z" id="1Jc-ik-Khh"/>
+                            <outlet property="delegate" destination="0wB-uE-Z6z" id="PWm-jd-k0f"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add Ingredient" id="rmU-Ua-xy4">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="AFJ-Ot-Qfp">
+                            <connections>
+                                <action selector="cancel:" destination="0wB-uE-Z6z" id="EFL-Ws-THY"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="8yS-jt-vJn">
+                            <connections>
+                                <action selector="save:" destination="0wB-uE-Z6z" id="Ylc-d9-hf9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xHS-JS-YeZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2106" y="-433"/>
+        </scene>
+        <!--Ingredients-->
+        <scene sceneID="ttz-L9-Gfd">
+            <objects>
+                <tableViewController id="arG-fn-h1B" customClass="PPREditIngredientListViewController" customModule="PPRecipes" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mMS-bS-COl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="kCellIdentifier" textLabel="U7p-9K-xHX" detailTextLabel="A4T-Ru-Cwq" style="IBUITableViewCellStyleSubtitle" id="eH6-QU-otb">
+                                <rect key="frame" x="0.0" y="22" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eH6-QU-otb" id="PgK-0S-e8j">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="An ingredient" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U7p-9K-xHX">
+                                            <rect key="frame" x="15" y="3" width="116.5" height="21.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Quanity and Unit of Measure" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="A4T-Ru-Cwq">
+                                            <rect key="frame" x="15" y="24.5" width="184.5" height="17"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="kInsertCellIdentifier" textLabel="sBS-g4-DNC" style="IBUITableViewCellStyleDefault" id="SB3-CV-GY2">
+                                <rect key="frame" x="0.0" y="66" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SB3-CV-GY2" id="ZlX-oP-Dgd">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Add Ingredient" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sBS-g4-DNC">
+                                            <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="0wB-uE-Z6z" kind="push" identifier="addIngredient" id="GiN-GS-2qV"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="arG-fn-h1B" id="MmI-ga-TDd"/>
+                            <outlet property="delegate" destination="arG-fn-h1B" id="Ow2-IC-6sK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Ingredients" id="0jY-Ol-asl"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZJD-TR-9Lj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1601" y="-197"/>
+        </scene>
+        <!--Recipe Name-->
+        <scene sceneID="5hS-bW-v6k">
+            <objects>
+                <viewController id="VEn-zK-G7b" customClass="PPRTextEditViewController" customModule="PPRecipes" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qbC-NV-Rwc"/>
+                        <viewControllerLayoutGuide type="bottom" id="pCg-rV-hzO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rfb-Td-BmJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oLP-FQ-dZI">
+                                <rect key="frame" x="16" y="129" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="VEn-zK-G7b" id="X3B-SR-5fB"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Please Enter The Recipe Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6b5-nh-hpw">
+                                <rect key="frame" x="68" y="84" width="239.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6b5-nh-hpw" firstAttribute="centerX" secondItem="rfb-Td-BmJ" secondAttribute="centerX" id="VVz-Dr-VIp"/>
+                            <constraint firstItem="6b5-nh-hpw" firstAttribute="top" secondItem="qbC-NV-Rwc" secondAttribute="bottom" constant="20" id="hVB-d6-8bQ"/>
+                            <constraint firstItem="oLP-FQ-dZI" firstAttribute="top" secondItem="6b5-nh-hpw" secondAttribute="bottom" constant="24" id="kuW-uJ-VjM"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="oLP-FQ-dZI" secondAttribute="leading" id="qkd-15-ufh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oLP-FQ-dZI" secondAttribute="trailing" id="t3I-vP-1hU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Recipe Name" id="5zx-QD-TIJ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Nlv-TI-l0S">
+                            <connections>
+                                <action selector="cancel:" destination="VEn-zK-G7b" id="RBW-Yf-NKO"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="3yY-EN-pdZ">
+                            <connections>
+                                <action selector="done:" destination="VEn-zK-G7b" id="ujD-rq-oL1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="oLP-FQ-dZI" id="N2J-FZ-n0O"/>
+                        <outlet property="view" destination="rfb-Td-BmJ" id="bPz-hq-GMk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mrr-sG-KKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1615" y="-2781"/>
+        </scene>
+        <!--Recipe Type-->
+        <scene sceneID="9wU-py-JJH">
+            <objects>
+                <tableViewController id="dA7-ZK-So4" customClass="PPRSelectTypeViewController" customModule="PPRecipes" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="DRJ-8f-H8V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="kCellIdentifier" textLabel="4S0-Rx-SYg" style="IBUITableViewCellStyleDefault" id="zp6-G5-qhd">
+                                <rect key="frame" x="0.0" y="22" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zp6-G5-qhd" id="pg5-bF-bbr">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4S0-Rx-SYg">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dA7-ZK-So4" id="1c1-jy-FSr"/>
+                            <outlet property="delegate" destination="dA7-ZK-So4" id="MKf-3N-Bir"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Recipe Type" id="zlt-Hb-p7d">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="EG0-PN-zy7">
+                            <connections>
+                                <action selector="cancel:" destination="dA7-ZK-So4" id="Cnt-sc-2hq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="atn-RE-A6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1615" y="-2205"/>
+        </scene>
+        <!--Add Recipe-->
+        <scene sceneID="lmK-Mo-rEw">
+            <objects>
+                <tableViewController id="WXB-cT-tyQ" customClass="PPREditRecipeViewController" customModule="PPRecipes" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="fhL-kY-ygU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection id="3po-44-brH">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NameCell" textLabel="n1l-xs-6Sk" detailTextLabel="27l-sU-UQN" style="IBUITableViewCellStyleValue1" id="lpa-tH-Mne">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lpa-tH-Mne" id="eOL-bC-iNu">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n1l-xs-6Sk">
+                                                    <rect key="frame" x="15" y="12" width="48" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Pot Roast" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="27l-sU-UQN">
+                                                    <rect key="frame" x="266.5" y="12" width="73.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="VEn-zK-G7b" kind="push" identifier="editRecipeName" id="dhU-sv-Ibp"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TypeCell" textLabel="6ya-08-NaZ" detailTextLabel="Dxs-mW-0e4" style="IBUITableViewCellStyleValue1" id="akZ-fE-q8j">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="akZ-fE-q8j" id="MWS-4P-2Bo">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6ya-08-NaZ">
+                                                    <rect key="frame" x="15" y="12" width="40.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Entreé" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dxs-mW-0e4">
+                                                    <rect key="frame" x="290" y="12" width="50" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="dA7-ZK-So4" kind="push" identifier="selectRecipeType" id="z0w-kV-avf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ServesCell" textLabel="6vw-kb-08Y" detailTextLabel="A3G-UI-p9J" style="IBUITableViewCellStyleValue1" id="yZF-G0-ICn">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yZF-G0-ICn" id="uuz-99-soJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Serves" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6vw-kb-08Y">
+                                                    <rect key="frame" x="15" y="12" width="56.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="12" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="A3G-UI-p9J">
+                                                    <rect key="frame" x="322.5" y="12" width="17.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Sv9-45-LDx" kind="push" identifier="selectNumberOfServings" id="Eb6-al-7lZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DescCell" rowHeight="120" id="a8x-Vo-LZd">
+                                        <rect key="frame" x="0.0" y="132" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a8x-Vo-LZd" id="7gK-Ou-0UD">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1123" contentMode="left" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dda-Xf-NlV">
+                                                    <rect key="frame" x="8" y="4" width="292" height="110"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="vCU-Ca-Vq4" kind="push" identifier="editDescription" id="57c-iY-Gc4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="IngredientsCell" textLabel="MuJ-jL-nst" detailTextLabel="4cp-zw-hA5" style="IBUITableViewCellStyleValue1" id="jwD-yz-wbJ">
+                                        <rect key="frame" x="0.0" y="252" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jwD-yz-wbJ" id="gMn-nm-lXG">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Ingredients" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MuJ-jL-nst">
+                                                    <rect key="frame" x="15" y="12" width="93.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="12" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4cp-zw-hA5">
+                                                    <rect key="frame" x="322.5" y="12" width="17.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="arG-fn-h1B" kind="push" identifier="selectIngredients" id="Uyd-7R-2tV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add Recipe" id="mDa-ZC-58S">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="G6r-cg-udP">
+                            <connections>
+                                <action selector="cancel:" destination="WXB-cT-tyQ" id="Y2Z-nU-4yN"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="xk0-4F-EP9">
+                            <connections>
+                                <action selector="save:" destination="WXB-cT-tyQ" id="A99-Kz-9lV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6vH-73-zkk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973" y="-1619"/>
+        </scene>
+        <!--Master-->
+        <scene sceneID="18">
+            <objects>
+                <tableViewController title="Master" id="12" customClass="PPRMasterViewController" customModule="PPRecipes" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="13">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="phq-AM-6qj" style="IBUITableViewCellStyleDefault" id="lJ0-d7-vTF">
+                                <rect key="frame" x="0.0" y="22" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lJ0-d7-vTF" id="8Gp-RW-7ys">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="phq-AM-6qj">
+                                            <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="21" kind="push" identifier="showRecipe" id="jZb-fq-zAk"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="12" id="16"/>
+                            <outlet property="delegate" destination="12" id="15"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Recipes" id="36">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="nyB-jx-v6j">
+                            <connections>
+                                <segue destination="WXB-cT-tyQ" kind="push" identifier="addRecipe" id="huE-rD-eJ4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="459" y="64"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="24">
+            <objects>
+                <viewController title="Detail" id="21" customClass="PPRDetailViewController" customModule="PPRecipes" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ubs-T8-VwP"/>
+                        <viewControllerLayoutGuide type="bottom" id="DwX-Sl-pPL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NwP-Kx-sRZ" customClass="PPRDetailView" customModule="PPRecipes" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1nE-lI-iXg">
+                                <rect key="frame" x="16" y="82" width="343" height="150.5"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Type: Entreé" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zbc-Sl-6Tm">
+                                <rect key="frame" x="16" y="45" width="96.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Serves: 12" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="tRp-Ja-Cia">
+                                <rect key="frame" x="280" y="45" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Recipe Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zoJ-wx-jof">
+                                <rect key="frame" x="112" y="8" width="151" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tRp-Ja-Cia" firstAttribute="top" secondItem="zoJ-wx-jof" secondAttribute="bottom" constant="8" id="5XW-Do-srC"/>
+                            <constraint firstItem="zbc-Sl-6Tm" firstAttribute="top" secondItem="zoJ-wx-jof" secondAttribute="bottom" constant="8" id="Eq8-tF-2Wj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1nE-lI-iXg" secondAttribute="trailing" id="Hm2-O9-B3S"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="zbc-Sl-6Tm" secondAttribute="leading" id="R9L-q6-osf"/>
+                            <constraint firstItem="1nE-lI-iXg" firstAttribute="top" secondItem="zbc-Sl-6Tm" secondAttribute="bottom" constant="16" id="VmQ-X1-lS4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tRp-Ja-Cia" secondAttribute="trailing" id="eEL-j1-vBC"/>
+                            <constraint firstItem="zoJ-wx-jof" firstAttribute="top" secondItem="Ubs-T8-VwP" secondAttribute="bottom" constant="8" id="s1H-Hc-TuB"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="1nE-lI-iXg" secondAttribute="leading" id="uKf-TF-7ot"/>
+                            <constraint firstItem="zoJ-wx-jof" firstAttribute="centerX" secondItem="NwP-Kx-sRZ" secondAttribute="centerX" id="w5d-Zb-eDU"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="descriptionLabel" destination="1nE-lI-iXg" id="li5-gm-Wtp"/>
+                            <outlet property="recipeNameLabel" destination="zoJ-wx-jof" id="UOL-sP-Q9M"/>
+                            <outlet property="servesLabel" destination="tRp-Ja-Cia" id="1xo-0c-JWV"/>
+                            <outlet property="typeLabel" destination="zbc-Sl-6Tm" id="9uw-vW-Qgz"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detail" id="26">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="WOY-es-gsb">
+                            <connections>
+                                <segue destination="WXB-cT-tyQ" kind="push" identifier="editRecipe" id="CZe-wD-lTM"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="04b-oN-hkj">
+                            <connections>
+                                <action selector="action:" destination="21" id="dYY-no-OjP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="64"/>
+        </scene>
+        <!--Quantity-->
+        <scene sceneID="3kb-Ha-b8T">
+            <objects>
+                <viewController id="mIg-BN-ggp" customClass="PPRTextEditViewController" customModule="PPRecipes" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5QX-lH-ZLC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Igb-As-Yx6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Apr-4X-dij">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xOX-33-qQB">
+                                <rect key="frame" x="16" y="129" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enter Ingredient Quantity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Av3-vS-tgZ">
+                                <rect key="frame" x="92" y="84" width="191.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xOX-33-qQB" firstAttribute="top" secondItem="Av3-vS-tgZ" secondAttribute="bottom" constant="24" id="GiL-Jw-fHl"/>
+                            <constraint firstItem="Av3-vS-tgZ" firstAttribute="centerX" secondItem="Apr-4X-dij" secondAttribute="centerX" id="Jac-It-d5t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xOX-33-qQB" secondAttribute="trailing" id="UQT-98-Eyw"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="xOX-33-qQB" secondAttribute="leading" id="YBi-Fu-UEz"/>
+                            <constraint firstItem="Av3-vS-tgZ" firstAttribute="top" secondItem="5QX-lH-ZLC" secondAttribute="bottom" constant="20" id="grP-Ad-r9J"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quantity" id="4T4-l5-T0t">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="fcA-Lk-TpN">
+                            <connections>
+                                <action selector="cancel:" destination="mIg-BN-ggp" id="3eD-Wq-HG4"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="0pi-sa-FOL">
+                            <connections>
+                                <action selector="done:" destination="mIg-BN-ggp" id="Kf3-H0-2pC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="xOX-33-qQB" id="Ltn-VR-XAK"/>
+                        <outlet property="view" destination="Apr-4X-dij" id="U8C-Zz-Y4B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HpT-zG-J97" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2606" y="-1022"/>
+        </scene>
+        <!--Directions-->
+        <scene sceneID="VEn-U2-I6Y">
+            <objects>
+                <viewController id="vCU-Ca-Vq4" customClass="PPRTextEditViewController" customModule="PPRecipes" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Hy-E9-mCG"/>
+                        <viewControllerLayoutGuide type="bottom" id="eqf-TI-fLr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8HJ-D8-Bsr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cZR-jq-cJk">
+                                <rect key="frame" x="0.0" y="64" width="383" height="605"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vCU-Ca-Vq4" id="phG-9p-AHk"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cZR-jq-cJk" firstAttribute="leading" secondItem="8HJ-D8-Bsr" secondAttribute="leadingMargin" constant="-16" id="4at-dY-cQB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cZR-jq-cJk" secondAttribute="trailing" constant="-24" id="DI1-ku-WVx"/>
+                            <constraint firstItem="eqf-TI-fLr" firstAttribute="top" secondItem="cZR-jq-cJk" secondAttribute="bottom" constant="-2" id="PZn-dj-AUc"/>
+                            <constraint firstItem="cZR-jq-cJk" firstAttribute="top" secondItem="3Hy-E9-mCG" secondAttribute="bottom" id="gtx-ZZ-UgZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Directions" id="vLJ-5w-61M">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="hnH-yX-YiE">
+                            <connections>
+                                <action selector="cancel:" destination="vCU-Ca-Vq4" id="ki3-Si-H3p"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="fea-Qf-MUh">
+                            <connections>
+                                <action selector="done:" destination="vCU-Ca-Vq4" id="CoX-O2-5Ej"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textView" destination="cZR-jq-cJk" id="pqu-fT-LoM"/>
+                        <outlet property="view" destination="8HJ-D8-Bsr" id="26w-P9-eUO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IQ1-tk-RhK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1615" y="-1619"/>
+        </scene>
+        <!--Unit Of Measure-->
+        <scene sceneID="1IZ-3q-C1e">
+            <objects>
+                <viewController id="1gQ-lK-kQS" customClass="PPRTextEditViewController" customModule="PPRecipes" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O9T-4w-oeb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xwb-bE-q2C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iCu-A5-ZFK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enter New Unit Of Measure" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpJ-av-1gn">
+                                <rect key="frame" x="60.5" y="84" width="254.5" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XYc-so-AGF">
+                                <rect key="frame" x="16" y="139" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="1gQ-lK-kQS" id="lqm-7n-iSJ"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mpJ-av-1gn" firstAttribute="top" secondItem="O9T-4w-oeb" secondAttribute="bottom" constant="20" id="3D6-Kw-zOp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XYc-so-AGF" secondAttribute="trailing" id="OIa-WH-SNs"/>
+                            <constraint firstItem="mpJ-av-1gn" firstAttribute="centerX" secondItem="iCu-A5-ZFK" secondAttribute="centerX" id="WXH-zJ-atq"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="XYc-so-AGF" secondAttribute="leading" id="ckT-xT-PD5"/>
+                            <constraint firstItem="XYc-so-AGF" firstAttribute="top" secondItem="mpJ-av-1gn" secondAttribute="bottom" constant="30" id="vim-qW-GLQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Unit Of Measure" id="ydc-oQ-y9N">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="OdK-V2-Thl">
+                            <connections>
+                                <action selector="cancel:" destination="1gQ-lK-kQS" id="hO2-Al-Bfc"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="VHM-ZD-rbv">
+                            <connections>
+                                <action selector="done:" destination="1gQ-lK-kQS" id="WyC-w9-JZf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="XYc-so-AGF" id="VLL-A6-TXR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KmW-5A-dhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2606" y="155"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="huE-rD-eJ4"/>
+    </inferredMetricsTieBreakers>
+</document>

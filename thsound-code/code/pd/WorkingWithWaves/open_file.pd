@@ -1,0 +1,16 @@
+#N canvas 944 173 342 300 10;
+#X obj 52 131 readsf~;
+#X msg 52 59 open ../../sound/Knife-on-wineglass.wav;
+#X msg 10 59 start;
+#X msg 67 102 stop;
+#X obj 14 193 output~;
+#X msg 10 4 bang;
+#X obj 10 33 t b b;
+#X connect 0 0 4 0;
+#X connect 0 0 4 1;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 5 0 6 0;
+#X connect 6 0 2 0;
+#X connect 6 1 1 0;

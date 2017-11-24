@@ -1,0 +1,9 @@
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RunCukesTest
+Listening on http://sebsair13.lan:8887/
+Exception in thread "Thread-0" java.lang.RuntimeException:
+                                                  Account number not found: 1234
+	at nicebank.TransactionProcessor.process(TransactionProcessor.java:26)
+	at nicebank.BackgroundProcessHooks$1.run(BackgroundProcessHooks.java:16)

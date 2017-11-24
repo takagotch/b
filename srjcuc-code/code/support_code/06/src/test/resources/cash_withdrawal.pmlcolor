@@ -1,0 +1,6 @@
+test/step_definitions/AccountSteps.java:26: error: cannot find symbol
+    helper.getMyAccount().deposit(amount);
+                         ^
+  symbol:   method deposit(Money)
+  location: class Account
+1 error

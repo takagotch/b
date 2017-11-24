@@ -1,0 +1,20 @@
+  Scenario: List fruit
+    Given the system knows about the following fruit:
+    When the client requests GET /fruits
+    Then the response should be JSON:
+      """
+      [
+        {"name": "banana", "color": "yellow"},
+        {"name": "strawberry", "color": "red"}
+      ]
+      """
+      org.junit.ComparisonFailure: Incorrect JSON representation. expected:<[[
+        {"name": "banana", "color": "yellow"},
+        {"name": "strawberry", "color": "red"}
+      ]]> but was:<[[]]>
+      	at org.junit.Assert.assertEquals(Assert.java:115)
+      	at RestSteps.theResponseShouldBeJSON(RestSteps.java:44)
+      	at ✽.Then the response should be JSON:(fruit_list.feature:11)
+
+1 Scenarios (1 failed)
+3 Steps (1 failed, 2 passed)

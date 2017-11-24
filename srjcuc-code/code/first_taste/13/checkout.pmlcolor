@@ -1,0 +1,11 @@
+.....F
+
+2 Scenarios (1 failed, 1 passed)
+6 Steps (1 failed, 5 passed)
+0m0.155s
+
+java.lang.AssertionError: expected:<80> but was:<40>
+	at org.junit.Assert.fail(Assert.java:92)
+        . . .
+	at step_definitions.CheckoutSteps.theTotalPriceShouldBeC
+	at ✽.Then the total price should be 80c(checkout.feature:6)

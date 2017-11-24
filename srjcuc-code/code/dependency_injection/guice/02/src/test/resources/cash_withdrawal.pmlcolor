@@ -1,0 +1,17 @@
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RunCukesTest
+Feature: Cash Withdrawal
+Listening on http://10.101.1.77:8887/
+Failure in after hook:ServerHooks.stopServer()
+Message: com.google.inject.ProvisionException: Guice provision errors:
+
+1) Error injecting constructor, org.javalite.activejdbc.DBException: 
+   com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException:
+   Duplicate entry '1234' for key 'number', Query:
+   INSERT INTO accounts (number, balance) VALUES (?, ?), params: 1234,0.00
+  at support.TestAccount.<init>(TestAccount.java:8)
+  while locating support.TestAccount
+    for parameter 0 at hooks.ServerHooks.<init>(ServerHooks.java:22)
+  while locating hooks.ServerHooks

@@ -1,0 +1,4 @@
+When I withdraw $20
+  org.openqa.selenium.NoSuchElementException:
+                  Unable to locate element: {"method":"id","selector":"Amount"}
+  Command duration or timeout: 14 milliseconds

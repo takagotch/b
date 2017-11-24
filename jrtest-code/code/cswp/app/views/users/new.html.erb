@@ -1,0 +1,25 @@
+<%= provide(:title, 'Sign Up') %>
+
+<div class="container">
+
+  <%= form_for(@user, :html => {:class => 'form-signin'}) do |f| %>
+      <h2 class="form-signin-heading">Sign Up</h2>
+      <%= render 'shared/error_messages' %>
+
+      <%= f.label :name %><br>
+      <%= f.text_field :name, class: 'form-control' %>
+      <%= f.label :email %><br>
+      <%= f.text_field :email, class: 'form-control'%>
+      <%= f.label :password %><br>
+      <%= f.password_field :password, class: 'form-control' %>
+      <%= f.label :password_confirmation, 'Confirmation' %><br>
+      <%= f.password_field :password_confirmation, class: 'form-control'%>
+
+      <div class="text-centered, center">
+        <button class="btn btn-large btn-primary" type="submit">Create my account</button>
+      </div>
+  <% end %>
+
+</div>
+
+ur

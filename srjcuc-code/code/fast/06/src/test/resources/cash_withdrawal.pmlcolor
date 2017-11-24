@@ -1,0 +1,10 @@
+Scenario: Unsuccessful withdrawal due to insufficient ATM funds
+  Given my account is in credit
+  And the ATM contains $10
+  When I type $20
+  Then I should see an ask-for-less-money message
+    java.lang.AssertionError: Expected error message not displayed
+    	at org.junit.Assert.fail(Assert.java:88)
+    	at org.junit.Assert.assertTrue(Assert.java:41)
+    	at nicebank.TellerSteps.iShouldSeeAnAskForLessMoneyMessage
+    	at ✽.Then I should see an ask-for-less-money message

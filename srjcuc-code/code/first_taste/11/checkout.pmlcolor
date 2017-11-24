@@ -1,0 +1,15 @@
+..F
+
+1 Scenarios (1 failed)
+3 Steps (1 failed, 2 passed)
+0m0.099s
+
+java.lang.AssertionError: expected:<40> but was:<0>
+	at org.junit.Assert.fail(Assert.java:92)
+	at org.junit.Assert.failNotEquals(Assert.java:646)
+	at org.junit.Assert.assertEquals(Assert.java:127)
+	at org.junit.Assert.assertEquals(Assert.java:471)
+	at org.junit.Assert.assertEquals(Assert.java:455)
+	at step_definitions.CheckoutSteps.theTotalPriceShouldBeC
+	at ✽.Then the total price should be 40c(checkout.feature:5)
+

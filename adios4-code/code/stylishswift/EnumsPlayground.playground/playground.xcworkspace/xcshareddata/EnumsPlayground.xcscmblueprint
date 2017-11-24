@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "82263e25-b5eb-0310-b4ec-9460fbaf34b7++4949",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "82263e25-b5eb-0310-b4ec-9460fbaf34b7++4949" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "82263e25-b5eb-0310-b4ec-9460fbaf34b7++4949" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E0F76A35-1FBD-4431-A1B4-3BAC3D3AAA90",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "82263e25-b5eb-0310-b4ec-9460fbaf34b7++4949" : "adios4\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "EnumsPlayground",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Book\/code\/stylishswift\/EnumsPlayground.playground",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/svn.pragprog.com\/Bookshelf",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "82263e25-b5eb-0310-b4ec-9460fbaf34b7++4949"
+    }
+  ]
+}

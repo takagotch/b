@@ -1,0 +1,21 @@
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RunCukesTest
+Feature: Cash Withdrawal
+
+  Scenario: Successful withdrawal from an account in credit
+    Given I have deposited $100 in my account
+      cucumber.api.PendingException: TODO: implement me
+      	at nicebank.Steps.iHaveDeposited$InMyAccount(Steps.java:11)
+      	at ✽.Given I have deposited $100 in my account(cash_withdrawal.feature:3)
+    When I request $20
+    Then $20 should be dispensed
+
+1 Scenarios (1 undefined)
+3 Steps (1 pending, 2 undefined)
+0m0.121s
+
+cucumber.api.PendingException: TODO: implement me
+	at nicebank.Steps.iHaveDeposited$InMyAccount(Steps.java:11)
+	at ✽.Given I have deposited $100 in my account(cash_withdrawal.feature:3)

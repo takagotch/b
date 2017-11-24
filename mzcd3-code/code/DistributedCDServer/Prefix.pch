@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'DistributedCDServer' target in the 'DistributedCDServer' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

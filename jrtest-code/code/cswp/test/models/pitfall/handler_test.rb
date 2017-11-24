@@ -1,0 +1,24 @@
+#---
+# Excerpted from "The Way of the Web Tester",
+# published by The Pragmatic Bookshelf.
+# Copyrights apply to this code. It may not be used to create training material,
+# courses, books, articles, and the like. Contact us if you are in doubt.
+# We make no guarantees that this code is fit for any purpose.
+# Visit http://www.pragmaticprogrammer.com/titles/jrtest for more book information.
+#---
+require 'test_helper'
+require 'pitfall/handler'
+
+class HandlerTest < MiniTest::Test
+
+  def setup
+    @mockTransport = mock()
+    @handler = Handler.new(@mockTransport)
+  end
+
+  def test_transport_sends_uri_when_playing
+    @mockTransport.expects(:send)
+    @handler.handle_request('track:xxx')
+  end
+
+end

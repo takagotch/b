@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "82263e25-b5eb-0310-b4ec-9460fbaf34b7++4949",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "82263e25-b5eb-0310-b4ec-9460fbaf34b7++4949" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "82263e25-b5eb-0310-b4ec-9460fbaf34b7++4949" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "640B3A60-6B65-4EB7-BA0B-C14FE6DA6855",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "82263e25-b5eb-0310-b4ec-9460fbaf34b7++4949" : "adios4\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "StructsPlayground",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Book\/code\/stylishswift\/StructsPlayground.playground",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/svn.pragprog.com\/Bookshelf",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "82263e25-b5eb-0310-b4ec-9460fbaf34b7++4949"
+    }
+  ]
+}

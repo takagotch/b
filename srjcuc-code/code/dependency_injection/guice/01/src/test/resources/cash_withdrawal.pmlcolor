@@ -1,0 +1,13 @@
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RunCukesTest
+Feature: Cash Withdrawal
+Failure in before hook:ServerHooks.startServer()
+Message: com.google.inject.ConfigurationException: Guice configuration errors:
+
+1) Could not find a suitable constructor in hooks.ServerHooks.
+    Classes must have either one (and only one) constructor annotated with
+     @Inject or a zero-argument constructor that is not private.
+  at hooks.ServerHooks.class(ServerHooks.java:19)
+  while locating hooks.ServerHooks

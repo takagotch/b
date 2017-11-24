@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "82263e25-b5eb-0310-b4ec-9460fbaf34b7++4949",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "82263e25-b5eb-0310-b4ec-9460fbaf34b7++4949" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "82263e25-b5eb-0310-b4ec-9460fbaf34b7++4949" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2B058C0B-FEB8-4D91-90D4-8522E7B75EA2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "82263e25-b5eb-0310-b4ec-9460fbaf34b7++4949" : "adios4\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NumbersPlayground",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Book\/code\/startingswift\/NumbersPlayground.playground",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/svn.pragprog.com\/Bookshelf",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "82263e25-b5eb-0310-b4ec-9460fbaf34b7++4949"
+    }
+  ]
+}

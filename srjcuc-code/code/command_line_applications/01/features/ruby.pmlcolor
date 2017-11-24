@@ -1,0 +1,26 @@
+Feature: ruby -e
+
+  Scenario: print something
+    When I run `ruby -e "puts 'hello'"`
+    Then it should pass with:
+      """
+      hello
+      """
+
+1 scenario (1 undefined)
+2 steps (2 undefined)
+0m0.001s
+
+You can implement step definitions for undefined steps with these snippets:
+
+When /^I run `ruby \-e "(.*?)"`$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
+end
+
+Then /^it should pass with:$/ do |string|
+  pending # express the regexp above with the code you wish you had
+end
+
+If you want snippets in a different programming language,
+just make sure a file with the appropriate file extension
+exists where cucumber looks for step definitions.

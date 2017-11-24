@@ -1,0 +1,8 @@
+org.javalite.activejdbc.DBException: 
+  com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: 
+    Duplicate entry '1234' for key 'number', Query: 
+      INSERT INTO accounts (balance, number) VALUES (?, ?), params: 0.00,1234
+      ...
+    	at nicebank.Account.saveIt(Account.java)
+    	at support.KnowsTheDomain.getMyAccount(KnowsTheDomain.java:34)
+    	...

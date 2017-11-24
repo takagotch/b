@@ -1,0 +1,36 @@
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RunCukesTest
+Feature: Cash Withdrawal
+
+  Scenario: Successful withdrawal from an account in credit
+    Given I have deposited $100 in my account
+    When I request $20
+    Then $20 should be dispensed
+
+1 Scenarios (1 undefined)
+3 Steps (3 undefined)
+0m0.000s
+
+You can implement missing steps with the snippets below:
+
+@Given("^I have deposited \\$(\\d+) in my account$")
+public void iHaveDeposited$InMyAccount(int arg1) throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+@When("^I request \\$(\\d+)$")
+public void iRequest$(int arg1) throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+@Then("^\\$(\\d+) should be dispensed$")
+public void $ShouldBeDispensed(int arg1) throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.382 sec

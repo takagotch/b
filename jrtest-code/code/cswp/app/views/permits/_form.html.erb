@@ -1,0 +1,9 @@
+<%= form_for(@permit) do |f| %>
+    <div class="field">
+      <%= f.label :location %><br>
+      <%= f.text_field :location, :class => 'form-control' %>
+    </div>
+    <div class="form-actions">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+    </div>
+<% end %>

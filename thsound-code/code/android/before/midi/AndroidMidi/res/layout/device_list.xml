@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ! Excerpted from "Programming Sound with Pure Data",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/thsound for more book information.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView android:id="@+id/title_paired_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_paired_devices"
+        android:visibility="gone"
+        android:background="#666"
+        android:textColor="#fff"
+        android:paddingLeft="5dp"
+    />
+    <ListView android:id="@+id/paired_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="true"
+        android:layout_weight="1"
+    />
+</LinearLayout>

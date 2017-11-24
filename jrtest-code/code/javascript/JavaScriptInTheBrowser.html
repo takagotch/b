@@ -1,0 +1,28 @@
+<!--
+ ! Excerpted from "The Way of the Web Tester",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material,
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose.
+ ! Visit http://www.pragmaticprogrammer.com/titles/jrtest for more book information.
+-->
+<html>
+<head>
+  <script language="JavaScript">
+    function toMeters(form) {
+      var feet = parseFloat(form.Feet.value, 10);
+      var meters = feet * 0.3048;
+      form.Meters.value = meters;
+    }
+  </script>
+</head>
+<body>
+<form>
+  Feet
+  <input name="Feet" value="0" maxlength="15" size=15>
+  <input name="Calculate" value=" -> " type=button onClick=toMeters(this.form)>
+  Meters
+  <input name="Meters" readonly size=15>
+</form>
+</body>
+</html>

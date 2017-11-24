@@ -1,0 +1,10 @@
+Feature: Adding
+
+  Scenario: Add two numbers       # features/adding.feature:3
+    Given the input "2+2"         # features/step_definitions/calculator_steps.rb:1
+    When the calculator is run    # features/step_definitions/calculator_steps.rb:11
+    Then the output should be "4" # features/step_definitions/calculator_steps.rb:19
+
+1 scenario (1 passed)
+3 steps (3 passed)
+0m0.445s

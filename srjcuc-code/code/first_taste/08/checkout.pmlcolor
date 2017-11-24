@@ -1,0 +1,6 @@
+step_definitions/CheckoutSteps.java:19: error: cannot find symbol
+        checkout.add(itemCount, bananaPrice);
+                                ^
+  symbol:   variable bananaPrice
+  location: class CheckoutSteps
+1 error

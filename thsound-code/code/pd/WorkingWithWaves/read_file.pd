@@ -1,0 +1,15 @@
+#N canvas 457 176 433 234 10;
+#X msg 223 63 bang;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array wineglass 65230 float 0;
+#X coords 0 1 65229 -1 200 140 1 0 0;
+#X restore 13 63 graph;
+#X obj 75 36 soundfiler;
+#X obj 223 129 output~;
+#X obj 223 93 tabplay~ wineglass;
+#X msg 75 7 read -resize ../../sound/Knife-on-wineglass.wav wineglass
+;
+#X connect 0 0 4 0;
+#X connect 4 0 3 0;
+#X connect 4 0 3 1;
+#X connect 5 0 2 0;

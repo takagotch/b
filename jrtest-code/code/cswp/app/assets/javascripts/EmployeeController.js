@@ -1,0 +1,52 @@
+/***
+ * Excerpted from "The Way of the Web Tester",
+ * published by The Pragmatic Bookshelf.
+ * Copyrights apply to this code. It may not be used to create training material,
+ * courses, books, articles, and the like. Contact us if you are in doubt.
+ * We make no guarantees that this code is fit for any purpose.
+ * Visit http://www.pragmaticprogrammer.com/titles/jrtest for more book information.
+***/
+var EmployeeController = function(pModel) {
+
+    var model = pModel || new EmployeeModel();
+
+    function init(){
+
+        that = this; // important!
+
+        $('#leftArrow').click(function(){
+            $('#Offsite option:selected').appendTo('#Onsite');
+        });
+
+        $('#rightArrow').click(function(){
+            $('#Onsite option:selected').appendTo('#Offste');
+        });
+
+        $('#save').click(function(){
+            that.save(that.model);
+        });
+    }
+
+    function save(){
+
+        params = model.saveParameters();
+
+        $.ajax({
+            type: "POST",
+            traditional: true,
+            url: "/tracker",
+            data:params,
+            dataType: 'json',
+            success: function(result)
+            {
+                $('#SuccessMessage').html(result.message);
+            }
+        });
+    }
+
+    return {
+        init: init,
+        save: save,
+        model : model
+    };
+};

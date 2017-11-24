@@ -1,0 +1,17 @@
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RunCukesTest
+Feature: 
+[[, 1, 2, 3], [1, , , ], [2, , , ], [3, , , ]]
+
+  Scenario:                                # tic_tac_toe/tic_tac_toe.feature:2
+    Given a board like this:
+    When player x plays in row 2, column 1
+      cucumber.api.PendingException: TODO: implement me
+      	at tic_tac_toe.BoardSteps.playerXPlaysInRowColumn(BoardSteps.java:21)
+      	at ✽.When player x plays in row 2, column 1(tic_tac_toe.feature:8)
+    Then the board should look like this:
+
+1 Scenarios (1 pending)
+3 Steps (1 skipped, 1 pending, 1 passed)

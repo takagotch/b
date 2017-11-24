@@ -1,0 +1,9 @@
+.P-
+
+1 Scenarios (1 pending)
+3 Steps (1 skipped, 1 pending, 1 passed)
+0m0.081s
+
+cucumber.api.PendingException: TODO: implement me
+	at step_definitions.CheckoutSteps.iCheckout(CheckoutSteps.java:17)
+	at ✽.When I checkout 1 "banana"(checkout.feature:4)

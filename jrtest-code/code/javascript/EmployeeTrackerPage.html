@@ -1,0 +1,74 @@
+<!--
+ ! Excerpted from "The Way of the Web Tester",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material,
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose.
+ ! Visit http://www.pragmaticprogrammer.com/titles/jrtest for more book information.
+-->
+<html>
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js">
+  </script>
+
+  <!-- include source files here... -->
+  <script type="text/javascript" src="src/EmployeeModel.js"></script>
+  <script type="text/javascript" src="src/EmployeeController.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      new EmployeeController().init();
+    });
+  </script>
+
+</head>
+
+<body>
+<div>
+  <div style="width:auto;float:left; margin-left:20px">
+    <table>
+      <tr>
+        <td>
+          Onsite
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <select id="Onsite" size="4" multiple="multiple" style="width:300px">
+            <option value="1">Alan Wrench</option>
+            <option value="2">Phil Phillips</option>
+            <option value="2">Rob Robertson</option>
+          </select>
+        </td>
+        <td style="text-align:center">
+          <input id="leftArrow" type="button" value=" < "/>
+          <input id="rightArrow" type="button" value=" > "/>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div style="float:left; margin-left:20px;">
+    <table>
+      <tr>
+        <td>
+          Offsite
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <select id="Offsite" size="4" multiple="multiple" style="width:300px">
+          </select>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div style="clear: both; padding-left: 220px;">
+    <input id="save" type="submit" value="Save"/>
+  </div>
+</div>
+</body>
+
+</html>

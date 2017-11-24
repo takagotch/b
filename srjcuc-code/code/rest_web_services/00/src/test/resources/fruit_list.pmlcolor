@@ -1,0 +1,48 @@
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RunCukesTest
+Feature: Fruit list
+  
+  To make a great smoothie, I need some fruit
+
+  Scenario: List fruit                                # fruit_list.feature:5
+    Given the system knows about the following fruit:
+    When the client requests GET /fruits
+    Then the response should be JSON:
+      """
+      [
+        {"name": "banana", "color": "yellow"},
+        {"name": "strawberry", "color": "red"},
+      ]
+      """
+
+1 Scenarios (1 undefined)
+3 Steps (3 undefined)
+0m0.000s
+
+
+You can implement missing steps with the snippets below:
+
+@Given("^the system knows about the following fruit:$")
+public void theSystemKnowsAboutTheFollowingFruit(DataTable arg1) throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // List<YourType>, List<List<E>>, List<Map<K,V>> or Map<K,V>.
+    // E,K,V must be a scalar (String, Integer, Date, enum etc)
+    throw new PendingException();
+}
+
+@When("^the client requests GET /fruits$")
+public void theClientRequestsGETFruits() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+@Then("^the response should be JSON:$")
+public void theResponseShouldBeJSON(String arg1) throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.54 sec

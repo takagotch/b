@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ! Excerpted from "Programming Sound with Pure Data",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/thsound for more book information.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical" android:layout_height="fill_parent">
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/connect" >
+</Button>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:padding="8dip">
+        <TextView android:text="@string/next" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+        <TextView android:text="@string/loading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/uriView"></TextView>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <ImageButton android:layout_height="wrap_content" android:src="@android:drawable/ic_media_play" android:id="@+id/playButton" android:layout_width="wrap_content" android:layout_weight="0.5"></ImageButton>
+        <ImageButton android:layout_height="wrap_content" android:src="@android:drawable/ic_media_previous" android:id="@+id/rewindButton" android:layout_width="wrap_content" android:layout_weight="0.5"></ImageButton>
+    </LinearLayout>
+</LinearLayout>

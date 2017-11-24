@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ! Excerpted from "Programming Sound with Pure Data",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/thsound for more book information.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<Button android:id="@+id/connect_button" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/connect_button_text" />
+	<Button android:id="@+id/play_button" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/play_button_text" />
+	<TextView android:id="@+id/log_box" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:gravity="bottom"
+		android:scrollbars="vertical" android:text="" />
+</LinearLayout>

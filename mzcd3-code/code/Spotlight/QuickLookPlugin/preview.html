@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+ ! Excerpted from "Core Data in Objective-C, Third Edition",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material,
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose.
+ ! Visit http://www.pragmaticprogrammer.com/titles/mzcd3 for more book information.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <title>Recipe Preview</title>
+        <link rel="stylesheet" type="text/css" href="QLWebDefaultStyle.css"/>
+        <style type="text/css">
+            #image {
+                -webkit-box-shadow : 3px 3px 5px rgba(0, 0, 0, 0.3);
+            }
+            #left {
+                position : absolute;
+                top : 10px;
+                left : 10px;
+            }
+            #right {
+                position : absolute;
+                top : 10px;
+                left : 340px;
+            }
+            #title {
+                font-weight : bold;
+                font-size : 18px;
+            }
+            #description {
+                font-size : 12px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="left">
+            <img width="320" height="240" id="image" src="cid:preview-image"/>
+            <p id="serves">Serves: 10</p>
+            <p id="last_served">Last Served: July 2, 2007</p>
+        </div>
+        <div id="right">
+            <h1 id="title">Recipe: Pot Roast</h1>
+            <p id="description">Cras dictum. Maecenas ut turpis. In vitae erat ac orci dignissim eleifend. Nunc quis justo. Sed vel ipsum in purus tincidunt pharetra. Sed pulvinar, felis id consectetuer malesuada, enim nisl mattis elit, a facilisis tortor nibh quis leo. Sed augue lacus, pretium vitae, molestie eget, rhoncus quis, elit. Donec in augue. Fusce orci wisi, ornare id, mollis vel, lacinia vel, massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </div>
+    </body>
+</html>

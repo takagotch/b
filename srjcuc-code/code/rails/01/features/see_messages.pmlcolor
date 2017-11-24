@@ -1,0 +1,38 @@
+Feature: See Messages
+
+  Scenario: See another user's messages
+    Given there is a User
+      Undefined step: "there is a User" (Cucumber::Undefined)
+      features/see_messages.feature:3
+    And the User has posted the message "this is my message"
+      Undefined step: "the User has posted the message "this is my message"" 
+      (Cucumber::Undefined)
+      features/see_messages.feature:4
+    When I visit the page for the User
+      Undefined step: "I visit the page for the User" (Cucumber::Undefined)
+      features/see_messages.feature:5
+    Then I should see "this is my message"
+      Undefined step: "I should see "this is my message"" (Cucumber::Undefined)
+      features/see_messages.feature:6
+
+1 scenario (1 undefined)
+4 steps (4 undefined)
+0m0.350s
+
+You can implement step definitions for undefined steps with these snippets:
+
+Given /^there is a User$/ do
+  pending # express the regexp above with the code you wish you had
+end
+
+Given /^the User has posted the message "(.*?)"$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
+end
+
+When /^I visit the page for the User$/ do
+  pending # express the regexp above with the code you wish you had
+end
+
+Then /^I should see "(.*?)"$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
+end

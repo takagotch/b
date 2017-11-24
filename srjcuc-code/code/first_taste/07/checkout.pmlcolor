@@ -1,0 +1,5 @@
+step_definitions/CheckoutSteps.java:15: error: cannot find symbol
+        Checkout checkout = new Checkout();
+        ^
+  symbol:   class Checkout
+  location: class CheckoutSteps

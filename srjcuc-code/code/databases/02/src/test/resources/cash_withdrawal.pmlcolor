@@ -1,0 +1,22 @@
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RunCukesTest
+Feature: Cash Withdrawal
+Listening on http://192.168.1.11:8887/
+Exception in thread "Thread-9" org.javalite.activejdbc.DBException: 
+ org.javalite.activejdbc.DBException: 
+  there is no connection 'default' on this thread, are you sure you opened it?, 
+    Query: SELECT  * FROM accounts WHERE  number = ? LIMIT 1, params: 1234
+	at org.javalite.activejdbc.DB.connection(DB.java:604)
+	at org.javalite.activejdbc.DB.find(DB.java:402)
+	at org.javalite.activejdbc.LazyList.hydrate(LazyList.java:302)
+	at org.javalite.activejdbc.LazyList.size(LazyList.java:528)
+	at org.javalite.activejdbc.Model.findFirst(Model.java:1674)
+	at nicebank.Account.findFirst(Account.java)
+	at nicebank.TransactionProcessor.process(TransactionProcessor.java:14)
+	at hooks.BackgroundProcessHooks$1.run(BackgroundProcessHooks.java:16)
+Caused by: org.javalite.activejdbc.DBException: 
+   there is no connection 'default' on this thread, are you sure you opened it?
+	... 8 more
+Server shutdown

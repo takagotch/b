@@ -1,0 +1,73 @@
+<!--
+ ! Excerpted from "The Cucumber for Java Book",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/srjcuc for more book information.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>uk.co.claysnow</groupId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+    <name>Cucumber-JVM Book Groovy Example</name>
+    <artifactId>groovy-example</artifactId>
+
+    <properties>
+        <cucumber.version>1.1.8</cucumber.version>
+        <junit.version>4.11</junit.version>
+        <groovy.version>2.3.3</groovy.version>
+        <gmaven.runtime>1.8</gmaven.runtime>
+        <gmaven-plugin.version>1.4</gmaven-plugin.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-groovy</artifactId> 
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId> 
+            <artifactId>groovy-all</artifactId>
+            <version>${groovy.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin> 
+                <groupId>org.codehaus.gmaven</groupId>
+                <artifactId>gmaven-plugin</artifactId>
+                <version>${gmaven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generateStubs</goal>
+                            <goal>compile</goal>
+                            <goal>generateTestStubs</goal>
+                            <goal>testCompile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+    
+</project>

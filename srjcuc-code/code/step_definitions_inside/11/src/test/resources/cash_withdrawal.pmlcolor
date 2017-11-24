@@ -1,0 +1,5 @@
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] src/test/java/nicebank/Steps.java:[52,28] error: cannot find symbol
+[INFO] 1 error

@@ -1,0 +1,23 @@
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RunCukesTest
+Feature: Cash Withdrawal
+
+  Scenario: Successful withdrawal from an account in credit
+    Given I have deposited $100 in my account
+    When I request $20
+      cucumber.api.PendingException: TODO: implement me
+      	at nicebank.Steps.iRequest$(Steps.java:24)
+      	at ✽.When I request $20(cash_withdrawal.feature:4)
+    Then $20 should be dispensed
+
+1 Scenarios (1 pending)
+3 Steps (1 skipped, 1 pending, 1 passed)
+0m0.100s
+
+cucumber.api.PendingException: TODO: implement me
+	at nicebank.Steps.iRequest$(Steps.java:24)
+	at ✽.When I request $20(cash_withdrawal.feature:4)
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.739 sec

@@ -1,0 +1,12 @@
+Feature: ruby -e
+
+  Scenario: print something
+    When I run `ruby -e "puts 'hello'"`
+    Then it should pass with:
+      """
+      hello
+      """
+
+1 scenario (1 passed)
+2 steps (2 passed)
+0m0.327s

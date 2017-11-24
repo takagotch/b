@@ -1,0 +1,6 @@
+step_definitions/CheckoutSteps.java:31: error: cannot find symbol
+        assertEquals(total, checkout.total());
+                            ^
+  symbol:   variable checkout
+  location: class CheckoutSteps
+1 error

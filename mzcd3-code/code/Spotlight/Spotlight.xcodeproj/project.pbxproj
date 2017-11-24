@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F7446990DB6B7EA00F9684A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F7446970DB6B7EA00F9684A /* MainMenu.xib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		B605CCB61BE2AA540042EA91 /* PPRDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = B605CCB51BE2AA540042EA91 /* PPRDataController.m */; };
+		B6308B7B0DE48D3600073265 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6308B7A0DE48D3600073265 /* AppDelegate.m */; };
+		B66D922D0DEC9E5700FD0930 /* v2_to_v3.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = B66D922C0DEC9E5700FD0930 /* v2_to_v3.xcmappingmodel */; };
+		B6B5971C0DE6574F00F164B7 /* RecipeIngredientToIngredient.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B597190DE6574F00F164B7 /* RecipeIngredientToIngredient.m */; };
+		B6B5971D0DE6574F00F164B7 /* RecipeIngredientToUnitOfMeasure.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B5971B0DE6574F00F164B7 /* RecipeIngredientToUnitOfMeasure.m */; };
+		B6C5262B0E1016DB000EC9B0 /* PPRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C5262A0E1016DB000EC9B0 /* PPRecipe.m */; };
+		B6C5277C0E102BA0000EC9B0 /* SpotlightPlugin.mdimporter in Copy Spotlight Plugin */ = {isa = PBXBuildFile; fileRef = B6C526D10E102AAB000EC9B0 /* SpotlightPlugin.mdimporter */; };
+		B6C528980E104858000EC9B0 /* PPImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C528970E104858000EC9B0 /* PPImageView.m */; };
+		B6C52AB00E10890F000EC9B0 /* GrokkingRecipes.qlgenerator in Copy QuickLook Plugin */ = {isa = PBXBuildFile; fileRef = B6C52A680E10841F000EC9B0 /* GrokkingRecipes.qlgenerator */; };
+		B6D004210DE52692000CD138 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6D004200DE52692000CD138 /* DataModel.xcdatamodeld */; };
+		B6D004290DE52719000CD138 /* v1_to_v2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = B6D004280DE52719000CD138 /* v1_to_v2.xcmappingmodel */; };
+		B6F3FE0D0E11C3F1009B9F71 /* book.icns in Resources */ = {isa = PBXBuildFile; fileRef = B6F3FE0C0E11C3F1009B9F71 /* book.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6C526D00E102AAB000EC9B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6C526CC0E102AAB000EC9B0 /* SpotlightPlugin.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D576316048677EA00EA77CD;
+			remoteInfo = SpotlightPlugin;
+		};
+		B6C527700E102B49000EC9B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6C526CC0E102AAB000EC9B0 /* SpotlightPlugin.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D57630D048677EA00EA77CD;
+			remoteInfo = SpotlightPlugin;
+		};
+		B6C52A670E10841F000EC9B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6C52A630E10841F000EC9B0 /* QuickLookPlugin.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D576316048677EA00EA77CD;
+			remoteInfo = QuickLookPlugin;
+		};
+		B6C52A690E108426000EC9B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6C52A630E10841F000EC9B0 /* QuickLookPlugin.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D57630D048677EA00EA77CD;
+			remoteInfo = QuickLookPlugin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B6C5277B0E102B8E000EC9B0 /* Copy Spotlight Plugin */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/Spotlight;
+			dstSubfolderSpec = 1;
+			files = (
+				B6C5277C0E102BA0000EC9B0 /* SpotlightPlugin.mdimporter in Copy Spotlight Plugin */,
+			);
+			name = "Copy Spotlight Plugin";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6C52A7B0E10846E000EC9B0 /* Copy QuickLook Plugin */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/QuickLook;
+			dstSubfolderSpec = 1;
+			files = (
+				B6C52AB00E10890F000EC9B0 /* GrokkingRecipes.qlgenerator in Copy QuickLook Plugin */,
+			);
+			name = "Copy QuickLook Plugin";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2F7446980DB6B7EA00F9684A /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* GrokkingRecipes_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrokkingRecipes_Prefix.pch; sourceTree = "<group>"; };
+		77C82804067257F0000B614F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* GrokkingRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrokkingRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B605CCB41BE2AA540042EA91 /* PPRDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRDataController.h; sourceTree = "<group>"; };
+		B605CCB51BE2AA540042EA91 /* PPRDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRDataController.m; sourceTree = "<group>"; };
+		B6308B790DE48D3600073265 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6308B7A0DE48D3600073265 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; tabWidth = 2; };
+		B6308B7C0DE48D3E00073265 /* v1.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = v1.xcdatamodel; sourceTree = "<group>"; };
+		B66D92240DEC9D1300FD0930 /* v2.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = v2.xcdatamodel; sourceTree = "<group>"; };
+		B66D922C0DEC9E5700FD0930 /* v2_to_v3.xcmappingmodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcmappingmodel; path = v2_to_v3.xcmappingmodel; sourceTree = "<group>"; };
+		B6B5970A0DE6559C00F164B7 /* v3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = v3.xcdatamodel; sourceTree = "<group>"; };
+		B6B597180DE6574F00F164B7 /* RecipeIngredientToIngredient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeIngredientToIngredient.h; sourceTree = "<group>"; };
+		B6B597190DE6574F00F164B7 /* RecipeIngredientToIngredient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeIngredientToIngredient.m; sourceTree = "<group>"; };
+		B6B5971A0DE6574F00F164B7 /* RecipeIngredientToUnitOfMeasure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeIngredientToUnitOfMeasure.h; sourceTree = "<group>"; };
+		B6B5971B0DE6574F00F164B7 /* RecipeIngredientToUnitOfMeasure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeIngredientToUnitOfMeasure.m; sourceTree = "<group>"; };
+		B6C526290E1016DB000EC9B0 /* PPRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRecipe.h; sourceTree = "<group>"; };
+		B6C5262A0E1016DB000EC9B0 /* PPRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = PPRecipe.m; sourceTree = "<group>"; tabWidth = 2; };
+		B6C526CC0E102AAB000EC9B0 /* SpotlightPlugin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpotlightPlugin.xcodeproj; path = SpotlightPlugin/SpotlightPlugin.xcodeproj; sourceTree = "<group>"; };
+		B6C528960E104858000EC9B0 /* PPImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPImageView.h; sourceTree = "<group>"; };
+		B6C528970E104858000EC9B0 /* PPImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPImageView.m; sourceTree = "<group>"; };
+		B6C52A630E10841F000EC9B0 /* QuickLookPlugin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QuickLookPlugin.xcodeproj; path = QuickLookPlugin/QuickLookPlugin.xcodeproj; sourceTree = "<group>"; };
+		B6D004280DE52719000CD138 /* v1_to_v2.xcmappingmodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcmappingmodel; path = v1_to_v2.xcmappingmodel; sourceTree = "<group>"; };
+		B6F3FE0C0E11C3F1009B9F71 /* book.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = book.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B6B597180DE6574F00F164B7 /* RecipeIngredientToIngredient.h */,
+				B6B597190DE6574F00F164B7 /* RecipeIngredientToIngredient.m */,
+				B6B5971A0DE6574F00F164B7 /* RecipeIngredientToUnitOfMeasure.h */,
+				B6B5971B0DE6574F00F164B7 /* RecipeIngredientToUnitOfMeasure.m */,
+				B6308B790DE48D3600073265 /* AppDelegate.h */,
+				B6308B7A0DE48D3600073265 /* AppDelegate.m */,
+				B6C526290E1016DB000EC9B0 /* PPRecipe.h */,
+				B6C5262A0E1016DB000EC9B0 /* PPRecipe.m */,
+				B6C528960E104858000EC9B0 /* PPImageView.h */,
+				B6C528970E104858000EC9B0 /* PPImageView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77C82804067257F0000B614F /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* GrokkingRecipes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* GrokkingRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				7756732906782D8800D1FEB8 /* Models */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				B6C5276E0E102B10000EC9B0 /* Plugins */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			indentWidth = 2;
+			name = GrokkingRecipes;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* GrokkingRecipes_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B6F3FE0C0E11C3F1009B9F71 /* book.icns */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				2F7446970DB6B7EA00F9684A /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7756732906782D8800D1FEB8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B605CCB41BE2AA540042EA91 /* PPRDataController.h */,
+				B605CCB51BE2AA540042EA91 /* PPRDataController.m */,
+				B6D004200DE52692000CD138 /* DataModel.xcdatamodeld */,
+				B6D004280DE52719000CD138 /* v1_to_v2.xcmappingmodel */,
+				B66D922C0DEC9E5700FD0930 /* v2_to_v3.xcmappingmodel */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B6C526CD0E102AAB000EC9B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6C526D10E102AAB000EC9B0 /* SpotlightPlugin.mdimporter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6C5276E0E102B10000EC9B0 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				B6C52A630E10841F000EC9B0 /* QuickLookPlugin.xcodeproj */,
+				B6C526CC0E102AAB000EC9B0 /* SpotlightPlugin.xcodeproj */,
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
+		B6C52A640E10841F000EC9B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6C52A680E10841F000EC9B0 /* GrokkingRecipes.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* GrokkingRecipes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26FC0A840875C7B200E6366F /* Build configuration list for PBXNativeTarget "GrokkingRecipes" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				B6C5277B0E102B8E000EC9B0 /* Copy Spotlight Plugin */,
+				B6C52A7B0E10846E000EC9B0 /* Copy QuickLook Plugin */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6C527710E102B49000EC9B0 /* PBXTargetDependency */,
+				B6C52A6A0E108426000EC9B0 /* PBXTargetDependency */,
+			);
+			name = GrokkingRecipes;
+			productInstallPath = "$(HOME)/Applications";
+			productName = GrokkingRecipes;
+			productReference = 8D1107320486CEB800E47090 /* GrokkingRecipes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "Spotlight" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* GrokkingRecipes */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B6C52A640E10841F000EC9B0 /* Products */;
+					ProjectRef = B6C52A630E10841F000EC9B0 /* QuickLookPlugin.xcodeproj */;
+				},
+				{
+					ProductGroup = B6C526CD0E102AAB000EC9B0 /* Products */;
+					ProjectRef = B6C526CC0E102AAB000EC9B0 /* SpotlightPlugin.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* GrokkingRecipes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B6C526D10E102AAB000EC9B0 /* SpotlightPlugin.mdimporter */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SpotlightPlugin.mdimporter;
+			remoteRef = B6C526D00E102AAB000EC9B0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B6C52A680E10841F000EC9B0 /* GrokkingRecipes.qlgenerator */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GrokkingRecipes.qlgenerator;
+			remoteRef = B6C52A670E10841F000EC9B0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				2F7446990DB6B7EA00F9684A /* MainMenu.xib in Resources */,
+				B6F3FE0D0E11C3F1009B9F71 /* book.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				B6308B7B0DE48D3600073265 /* AppDelegate.m in Sources */,
+				B6D004210DE52692000CD138 /* DataModel.xcdatamodeld in Sources */,
+				B6D004290DE52719000CD138 /* v1_to_v2.xcmappingmodel in Sources */,
+				B605CCB61BE2AA540042EA91 /* PPRDataController.m in Sources */,
+				B6B5971C0DE6574F00F164B7 /* RecipeIngredientToIngredient.m in Sources */,
+				B6B5971D0DE6574F00F164B7 /* RecipeIngredientToUnitOfMeasure.m in Sources */,
+				B66D922D0DEC9E5700FD0930 /* v2_to_v3.xcmappingmodel in Sources */,
+				B6C5262B0E1016DB000EC9B0 /* PPRecipe.m in Sources */,
+				B6C528980E104858000EC9B0 /* PPImageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6C527710E102B49000EC9B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SpotlightPlugin;
+			targetProxy = B6C527700E102B49000EC9B0 /* PBXContainerItemProxy */;
+		};
+		B6C52A6A0E108426000EC9B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QuickLookPlugin;
+			targetProxy = B6C52A690E108426000EC9B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2F7446970DB6B7EA00F9684A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F7446980DB6B7EA00F9684A /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26FC0A850875C7B200E6366F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GrokkingRecipes_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = GrokkingRecipes;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		26FC0A860875C7B200E6366F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GrokkingRecipes_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = GrokkingRecipes;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		26FC0A890875C7B200E6366F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		26FC0A8A0875C7B200E6366F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26FC0A840875C7B200E6366F /* Build configuration list for PBXNativeTarget "GrokkingRecipes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26FC0A850875C7B200E6366F /* Debug */,
+				26FC0A860875C7B200E6366F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "Spotlight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26FC0A890875C7B200E6366F /* Debug */,
+				26FC0A8A0875C7B200E6366F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B6D004200DE52692000CD138 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B6308B7C0DE48D3E00073265 /* v1.xcdatamodel */,
+				B66D92240DEC9D1300FD0930 /* v2.xcdatamodel */,
+				B6B5970A0DE6559C00F164B7 /* v3.xcdatamodel */,
+			);
+			currentVersion = B6B5970A0DE6559C00F164B7 /* v3.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,1 @@
+export CLASSPATH=.:../../jars/cucumber-core-1.1.5.jar:../../jars/cucumber-java-1.1.5.jar:../../jars/cucumber-jvm-deps-1.0.3.jar:../../jars/gherkin-2.12.2.jar:../../jars/junit-4.11.jar 

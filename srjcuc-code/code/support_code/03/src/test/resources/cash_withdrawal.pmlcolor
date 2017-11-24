@@ -1,0 +1,11 @@
+And the balance of my account should be $80.00
+      java.lang.AssertionError: Incorrect account balance
+                                          - expected:<$80.00> but was:<$100.00>
+      	at org.junit.Assert.fail(Assert.java:88)
+        . . .
+      	at nicebank.AccountSteps.theBalanceOfMyAccountShouldBe$
+                                                         (AccountSteps.java:36)
+      	at ✽.And the balance of my account should be $80.00
+
+1 Scenarios (1 failed)
+4 Steps (1 failed, 3 passed)

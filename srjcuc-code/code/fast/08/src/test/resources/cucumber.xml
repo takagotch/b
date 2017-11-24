@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ ! Excerpted from "The Cucumber for Java Book",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/srjcuc for more book information.
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <context:annotation-config/>
+
+    <context:component-scan base-package="hooks, nicebank, support" />
+
+    <bean class="support.AtmUserInterface" scope="cucumber-glue" />
+    <bean class="support.TestCashSlot" scope="cucumber-glue" />
+
+    <bean class="support.AccountFactory" factory-method="createTestAccount"
+                                            lazy-init="true" scope="cucumber-glue" />
+
+    <bean class="org.openqa.selenium.support.events.EventFiringWebDriver"
+                                                        destroy-method="quit">
+        <constructor-arg>
+            <bean class="org.openqa.selenium.firefox.FirefoxDriver" />
+        </constructor-arg>
+    </bean>
+</beans>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="untitled.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C3006" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Department" representedClassName="NSManagedObject" syncable="YES">
+        <attribute name="budget" attributeType="Decimal" minValueString="0" maxValueString="2147483647" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" attributeType="String" minValueString="2" defaultValueString="DepartmentName" syncable="YES"/>
+        <relationship name="employees" optional="YES" toMany="YES" maxCount="999" deletionRule="Nullify" destinationEntity="Employee" inverseName="department" inverseEntity="Employee" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="Employee" representedClassName="Employee" syncable="YES">
+        <attribute name="employeeID" optional="YES" attributeType="Integer 32" minValueString="0" syncable="YES"/>
+        <attribute name="firstName" attributeType="String" defaultValueString="First" syncable="YES"/>
+        <attribute name="lastName" attributeType="String" defaultValueString="Last" syncable="YES"/>
+        <attribute name="salary" attributeType="Float" minValueString="0" maxValueString="9999999" defaultValueString="0" syncable="YES"/>
+        <relationship name="department" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Department" inverseName="employees" inverseEntity="Department" indexed="YES" syncable="YES"/>
+        <relationship name="directReports" optional="YES" toMany="YES" maxCount="99" deletionRule="Nullify" destinationEntity="Employee" inverseName="manager" inverseEntity="Employee" indexed="YES" syncable="YES"/>
+        <relationship name="manager" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Employee" inverseName="directReports" inverseEntity="Employee" indexed="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Employee" positionX="360" positionY="111" width="128" height="150"/>
+        <element name="Department" positionX="124" positionY="135" width="128" height="90"/>
+    </elements>
+</model>

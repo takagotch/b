@@ -1,0 +1,4 @@
+java.lang.UnsupportedOperationException
+	at java.util.Collections$UnmodifiableList.set(Collections.java:1311)
+	at tic_tac_toe.BoardSteps.playerXPlaysInRowColumn(BoardSteps.java:20)
+	at ✽.When player x plays in row 2, column 1(tic_tac_toe.feature:8)

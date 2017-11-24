@@ -1,0 +1,17 @@
+Feature: Checkout
+
+  Scenario: Checkout a banana            # checkout.feature:2
+    Given the price of a "banana" is 40c # CheckoutSteps.thePriceOfAIsC(String,int)
+    When I checkout 1 "banana"           # CheckoutSteps.iCheckout(int,String)
+      cucumber.api.PendingException: TODO: implement me
+      	at step_definitions.CheckoutSteps.iCheckout(CheckoutSteps.java:17)
+      	at ✽.When I checkout 1 "banana"(checkout.feature:4)
+    Then the total price should be 40c   # CheckoutSteps.theTotalPriceShouldBeC(int)
+
+1 Scenarios (1 pending)
+3 Steps (1 skipped, 1 pending, 1 passed)
+0m0.126s
+
+cucumber.api.PendingException: TODO: implement me
+	at step_definitions.CheckoutSteps.iCheckout(CheckoutSteps.java:17)
+	at ✽.When I checkout 1 "banana"(checkout.feature:4)

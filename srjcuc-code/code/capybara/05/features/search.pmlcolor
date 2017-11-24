@@ -1,0 +1,24 @@
+Feature: Search
+
+  Scenario: Find messages by content
+    Given a User has posted the following messages:
+      | content            |
+      | I am making dinner |
+      | I just woke up     |
+      | I am going to work |
+      Can't mass-assign protected attributes: user 
+      (ActiveModel::MassAssignmentSecurity::Error)
+      ./features/step_definitions/user_steps.rb:16
+      features/search.feature:3
+    When I search for "I am"
+    Then the results should be:
+      | content            |
+      | I am making dinner |
+      | I am going to work |
+
+Failing Scenarios:
+cucumber features/search.feature:2
+
+1 scenario (1 failed)
+3 steps (1 failed, 2 skipped)
+0m0.421s

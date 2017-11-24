@@ -1,0 +1,25 @@
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RunCukesTest
+Feature: 
+
+  Scenario:                                # tic_tac_toe/tic_tac_toe.feature:2
+    Given a board like this:
+    When player x plays in row 2, column 1
+    Then the board should look like this:
+      cucumber.runtime.table.TableDiffException: Tables were not identical:
+            |   | 1 | 2 | 3 |
+            | 1 |   |   |   |
+          - | 2 | x |   |   |
+          + | 2 |   |   |   |
+            | 3 |   |   |   |
+      
+      	at cucumber.runtime.table.TableDiffer.calculateDiffs(TableDiffer.java:37)
+      	at cucumber.api.DataTable.diff(DataTable.java:169)
+      	at cucumber.api.DataTable.diff(DataTable.java:159)
+      	at tic_tac_toe.BoardSteps.theBoardShouldLookLikeThis(BoardSteps.java:24)
+      	at ✽.Then the board should look like this:(tic_tac_toe.feature:9)
+
+1 Scenarios (1 failed)
+3 Steps (1 failed, 2 passed)

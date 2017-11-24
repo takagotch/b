@@ -1,0 +1,21 @@
+Feature: ruby -e
+
+  Scenario: print something
+    When I run `ruby -e "puts 'hello'"`
+    Then it should fail with:
+      """
+      hello
+      """
+      Exit status was 0 which was not expected. Output:
+      
+      hello
+      
+       (RSpec::Expectations::ExpectationNotMetError)
+      features/ruby.feature:4
+
+Failing Scenarios:
+cucumber features/ruby.feature:2
+
+1 scenario (1 failed)
+2 steps (1 failed, 1 passed)
+0m0.313s

@@ -1,0 +1,21 @@
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RunCukesTest
+Feature: 
+
+  Scenario: Buy Two Bottles of Shampoo
+    Given the price of a bottle of shampoo is $2
+    When I scan 2 bottles of shampoo
+    Then the price should be $0
+      java.lang.AssertionError: expected:<0> but was:<2>
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.failNotEquals(Assert.java:743)
+      	at org.junit.Assert.assertEquals(Assert.java:118)
+      	at org.junit.Assert.assertEquals(Assert.java:555)
+      	at org.junit.Assert.assertEquals(Assert.java:542)
+      	at legacy.Steps.thePriceShouldBe$(Steps.java:19)
+      	at ✽.Then the price should be $0(bogof.feature:5)
+
+1 Scenarios (1 failed)
+3 Steps (1 failed, 2 passed)

@@ -1,0 +1,43 @@
+[INFO] --- liquibase-maven-plugin:3.0.5:update (default) @ atm-example ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Executing on Database: jdbc:mysql://localhost/bank
+INFO 02/01/14 17:16:liquibase: null: null: Successfully acquired change log lock
+INFO 02/01/14 17:16:liquibase: null: null: Reading from DATABASECHANGELOG
+INFO 02/01/14 17:16:liquibase: null: null: Reading from DATABASECHANGELOG
+INFO 02/01/14 17:16:liquibase: src/main/resources/bank_schema.xml:
+              src/main/resources/bank_schema.xml::1::seb: Table accounts created 
+INFO 02/01/14 17:16:liquibase: src/main/resources/bank_schema.xml:
+              src/main/resources/bank_schema.xml::1::seb:
+              ChangeSet src/main/resources/bank_schema.xml::1::seb
+              ran successfully in 13ms
+INFO 02/01/14 17:16:liquibase: src/main/resources/bank_schema.xml: null:
+              Successfully released change log lock
+....
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RunCukesTest
+Feature: Cash Withdrawal
+
+  Scenario: Successful withdrawal from an account in credit
+    Given my account has been credited with $100.00
+      org.javalite.activejdbc.DBException:
+          Failed to retrieve metadata from DB, connection:
+              'default' is not available
+      	at org.javalite.activejdbc.Registry.init(Registry.java:134)
+      	at org.javalite.activejdbc.Model.getMetaModel(Model.java:58)
+      	at org.javalite.activejdbc.Model.getMetaModelLocal(Model.java:946)
+      	at org.javalite.activejdbc.Model.get(Model.java:1021)
+      	at nicebank.Account.get(Account.java)
+      	at org.javalite.activejdbc.Model.getInteger(Model.java:1099)
+      	at nicebank.Account.getInteger(Account.java)
+      	at nicebank.Account.getNumber(Account.java:23)
+      	at nicebank.Account.credit(Account.java:11)
+      	at nicebank.AccountSteps.myAccountHasBeenCreditedWith$
+      	at ✽.Given my account has been credited with $100.00
+    When I withdraw $20
+    Then $20 should be dispensed
+    And the balance of my account should be $80.00
+
+1 Scenarios (1 failed)
+4 Steps (1 failed, 3 skipped)
